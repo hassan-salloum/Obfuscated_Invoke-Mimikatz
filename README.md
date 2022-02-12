@@ -6,4 +6,4 @@ Antivirus evasion activity using set command and ISE sploit module to bypass win
 ### How we can do it?  
 CHECK THE ATTACHED TUTORIAL
 
-***PLEASE DO NOT TEST VIRUSTOTAL OR ANYTHING SIMILAR***
+# ***PLEASE DO NOT TEST ON VIRUSTOTAL OR ANYTHING SIMILAR***
