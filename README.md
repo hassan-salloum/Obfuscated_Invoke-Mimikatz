@@ -7,7 +7,7 @@ Antivirus evasion activity using set command and ISE sploit module to bypass win
 - Step 1: download Invoke-Mimikatz.ps1 from PowershellMafia:
   https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1
 
-- Step 2: then substitute all “invoke-Mimikatz” currencies with “invoke-Lsasscraper” inside the invoke-mimikatze.ps1 script:
+- Step 2: then substitute all “invoke-Mimikatz” currencies with “invoke-Lsasscraper” inside the invoke-mimikatze.ps1 script:                                        
   ```diff sed -i -e 's/Invoke-Mimikatz/Invoke-LSASSscraper/g' Invoke-Mimikatz.ps1 ```
 
 - Step 3: remove all comments:
